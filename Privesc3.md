@@ -1,8 +1,8 @@
 # Privelege Escalation Laboratory 3
-## This laboratory work is based on privelege escalation tecnhiques by exploiting different types of binaries.
+### This laboratory work is based on privelege escalation tecnhiques by exploiting different types of binaries and using different tecnhiques.
 
 
-### user1
+## user1
 **Pass:	WelcomeToCodwer**
 
 We start with user1 and have to make our way up to user6 and then take root.
@@ -24,7 +24,7 @@ This is the command we use to read the contents of `/root/user2.txt`.
 ![image](https://github.com/cbr1N/codwer/assets/95069685/1725015a-ec04-410d-b746-8e3da61081f7)
 
 
-### user2
+## user2
 **Pass: WolfMountedFastnessNappy**
 
 ![image](https://github.com/cbr1N/codwer/assets/95069685/c44a3255-67df-4603-8f8b-771d72e225f8)
@@ -43,7 +43,7 @@ vim /root/user3.txt
 ![image](https://github.com/cbr1N/codwer/assets/95069685/086ec872-30e0-4433-ae28-4db021307435)
 
 
-### user3
+## user3
 **Pass: PebblyClaritySuperiorMournful**
 
 ![image](https://github.com/cbr1N/codwer/assets/95069685/d21b3cc1-edbd-4514-a827-41370e9bfb39)
@@ -63,7 +63,7 @@ cat /root/user4.txt
 ![image](https://github.com/cbr1N/codwer/assets/95069685/6fda0215-d35d-48d7-867a-010dbfa90350)
 
 
-### user4
+## user4
 **Pass: JustifierDetachedCuppedEndurable**
 
 ![image](https://github.com/cbr1N/codwer/assets/95069685/d79eb96e-d6e5-47e7-a009-be79de42bb57)
@@ -79,7 +79,7 @@ After setting our user id to 0 for executing this specific command, that being `
 ![image](https://github.com/cbr1N/codwer/assets/95069685/286d13cb-4bea-4f03-a609-ad792301da2e)
 
 
-### user5
+## user5
 **Pass: VentureRangedConveneVirus**
 
 ![image](https://github.com/cbr1N/codwer/assets/95069685/2dd05354-767c-48dc-8a26-96349dc0ceea)
@@ -127,7 +127,7 @@ Finally, we executed the `/tmp/myshell` shell with the `-p` option. This preserv
 ![image](https://github.com/cbr1N/codwer/assets/95069685/3245d0c4-a95e-481e-adf2-e56901a75a30)
 
 
-### user6
+## user6
 **Pass: RearViewUnscathedSantaRamble**
 
 ![image](https://github.com/cbr1N/codwer/assets/95069685/37e20fb3-d0fa-454e-9ae9-24fb9529fd15)
@@ -153,7 +153,7 @@ sudo python3 /root/password.txt
 ![image](https://github.com/cbr1N/codwer/assets/95069685/3420331b-7898-4353-a8cb-b917fec8e7b4)
 
 
-### root
+## root
 **Pass: CapsAndMissesEverywhere**
 
 
