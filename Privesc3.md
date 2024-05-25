@@ -1,5 +1,5 @@
 # Privelege Escalation Laboratory 3
-### This laboratory work is based on privelege escalation tecnhiques by exploiting different types of binaries and using different tecnhiques.
+### This laboratory work is based on privelege escalation tecnhiques by exploiting different types of binaries 
 
 
 ## user1
