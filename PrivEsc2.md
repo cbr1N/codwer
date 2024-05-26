@@ -1,6 +1,6 @@
 # Privelege Escalation Laboratory 2
 
-# This writeup contains the solving steps of all the prvelege escalation challenges from codwer.academy.
+### This writeup contains the solving steps of all the prvelege escalation challenges from codwer.academy.
 
 ## Privesc1
 
