@@ -6,7 +6,7 @@
 
 ![image](https://github.com/cbr1N/codwer/assets/95069685/e5edacbe-cba4-4269-8594-1c49e55d6a07)
 
-Firstly we access a container running on a Linux machine using the given IP address and port. We also have the username and password that are configured for SSH access.
+Firstly we access a container running on a Linux machine using the given IP address and port. We also have the username and password that are configured for SSH access. This will be the first step for the other challenges too.
 
 ![image](https://github.com/cbr1N/codwer/assets/95069685/f0b16503-11a1-4912-a7cc-4d175fd94473)
 
