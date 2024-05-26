@@ -10,11 +10,11 @@ Firstly we access a container running on a Linux machine using the given IP addr
 
 ![image](https://github.com/cbr1N/codwer/assets/95069685/f0b16503-11a1-4912-a7cc-4d175fd94473)
 
-As we can see /usr/bin/find has the SUID set to it. We can exploit this and gain root access.
+As we can see `/usr/bin/find` has the SUID set to it. We can exploit this and gain root access.
 
 ![image](https://github.com/cbr1N/codwer/assets/95069685/09d4696a-5239-405e-8a24-e21387692d2e)
 
-If the binary has the SUID bit set, it does not drop the elevated privileges and may be abused to access the file system, escalate or maintain privileged access as a SUID backdoor. If it is used to run sh -p, omit the -p argument on systems like Debian (<= Stretch) that allow the default sh shell to run with SUID privileges.
+If the binary has the SUID bit set, it does not drop the elevated privileges and may be abused to access the file system, escalate or maintain privileged access as a SUID backdoor. If it is used to run `sh -p`, omit the `-p` argument on systems like Debian (<= Stretch) that allow the default `sh` shell to run with SUID privileges.
 
 ```
 ls -la /usr/bin/find
@@ -30,7 +30,7 @@ cat /flag.txt
 
 ![image](https://github.com/cbr1N/codwer/assets/95069685/87373ef0-5f6c-4b35-bfe4-0b31f26feb18)
 
-This example creates a local SUID copy of the binary and runs it to maintain elevated privileges. To interact with an existing SUID binary skip the first command and run the program using its original path.
+This example creates a local SUID copy of the binary and runs it to maintain elevated privileges.
 
 Each input line is treated as a filename for the file command and the output is corrupted by a suffix : followed by the result or the error of the operation, so this may not be suitable for binary files.
 
@@ -49,7 +49,7 @@ file -f $LFILE
 
 ![image](https://github.com/cbr1N/codwer/assets/95069685/6bf9b740-1aab-4469-824f-4e302762faf1)
 
-This can copy SUID permissions from any SUID binary (cp itself) to another. cp has user read permission so by copying it to the flag.txt file copy that we will create in /tmp, we gain read permission to that file. 
+This can copy SUID permissions from any SUID binary (`cp` itself) to another. `cp` has user read permission so by copying it to the `flag.txt` file copy that we will create in `/tmp`, we gain read permission to that file. 
 
 ```
 ls -la /usr/bin/cp
@@ -79,7 +79,7 @@ head "$LFILE"
 
 ![image](https://github.com/cbr1N/codwer/assets/95069685/02ca44d2-e9ca-4737-937d-dd9377c8c8ee)
 
-As in other instances the /usr/bin/awk command has the SUID bit set so we can exploit it. We use a read file exploit to gain the contents of /flag.txt.
+As in other instances the `/usr/bin/awk` command has the SUID bit set so we can exploit it. We use a read file exploit to gain the contents of `/flag.txt`.
 
 ```
 ls -l /usr/bin/awk
@@ -92,13 +92,13 @@ awk '//' /flag.txt
 
 ![image](https://github.com/cbr1N/codwer/assets/95069685/99601f0a-ed78-474a-a057-a1e968d5b1ce)
 
-We can see that the run_me has SUID set to it.
+We can see that the `run_me` has SUID set to it.
 
 ![image](https://github.com/cbr1N/codwer/assets/95069685/354ea433-bf86-4c95-a717-d4108df8172b)
 
-By creating a malicious ps script, we are taking advantage of the fact that run_me likely calls ps without specifying its full path, relying on the PATH environment variable.
-Prepending /tmp to PATH ensures that our malicious ps script is executed instead of the system ps command.
-This method works if run_me is running with elevated privileges, allowing our script to inherit these privileges and spawn a root shell.
+By creating a malicious `ps` script, we are taking advantage of the fact that `run_me` likely calls `ps` without specifying its full path, relying on the `PATH` environment variable.
+Prepending `/tmp` to `PATH` ensures that our malicious `ps` script is executed instead of the system `ps` command.
+This method works if `run_me` is running with elevated privileges, allowing our script to inherit these privileges and spawn a root shell.
 
 ```
 ls -l ./run_me
@@ -117,11 +117,11 @@ cat /flag.txt
 
 ![image](https://github.com/cbr1N/codwer/assets/95069685/eb07f96d-154e-441b-8e71-d42702feb046)
 
-This line env_keep+=LD_PRELOAD means that when a user executes a command with sudo, the LD_PRELOAD environment variable will be preserved.
+This line `env_keep+=LD_PRELOAD` means that when a user executes a command with `sudo`, the `LD_PRELOAD` environment variable will be preserved.
 
 ![image](https://github.com/cbr1N/codwer/assets/95069685/de4af3cc-f87e-406d-a705-8b6db3da8a44)
 
-When a program is running, LD_PRELOAD loads a shared object before any others. By writing a simple script with init() function, it will help us execute code as soon as the object is loaded. Then we run one of the programs you are allowed to run via sudo, in our case apache2, while setting the LD_PRELOAD environment variable to the full path of the new shared object.
+When a program is running, `LD_PRELOAD` loads a shared object before any others. By writing a simple script with `init()` function, it will help us execute code as soon as the object is loaded. Then we run one of the programs you are allowed to run via `sudo`, in our case `apache2`, while setting the `LD_PRELOAD` environment variable to the full path of the new shared object.
 
 ```
 sudo -l
@@ -133,7 +133,7 @@ sudo LD_PRELOAD=/tmp/preload.os apache2
 whoami
 cat /flag.txt
 ```
-preload.c script:
+`preload.c` script:
 ```
 #include <stdio.h>
 #include <sys/types.h>
@@ -154,8 +154,8 @@ void _init() {
 
 ![image](https://github.com/cbr1N/codwer/assets/95069685/4bb582be-68e1-43b8-9961-d961ce38ec96)
 
-The LD_LIBRARY_PATH contains a list of directories which search for shared libraries first.
-Use one of the shared objects in the list and we will hijack it by creating a file with same name. We will be targeting the libcrypt.so.1 file.
+The `LD_LIBRARY_PATH` contains a list of directories which search for shared libraries first.
+Use one of the shared objects in the list and we will hijack it by creating a file with same name. We will be targeting the `libcrypt.so.1 file`.
 
 ![image](https://github.com/cbr1N/codwer/assets/95069685/160d397a-db5c-44d3-92ae-9e543b59b717)
 
@@ -163,7 +163,7 @@ The next steps are identical to the previous example.
 
 ![image](https://github.com/cbr1N/codwer/assets/95069685/3720bafc-c7f0-447f-b2ce-64c08f04e2b9)
 
-And finally, we run apache2 using sudo, while settings the LD_LIBRARY_PATH environment variable to /tmp (where compiled shared object is located).
+And finally, we run `apache2` using `sudo`, while settings the `LD_LIBRARY_PATH` environment variable to `/tmp` (where compiled shared object is located).
 
 ```
 ldd /usr/sbin/apache2
@@ -175,7 +175,7 @@ sudo LD_LIBRARY_PATH=/tmp apache2
 whoami
 cat /flag.txt
 ```
-library.c script:
+`library.c` script:
 ```
 #include <stdio.h>
 #include <stdlib.h>
@@ -192,7 +192,7 @@ void hijack() {
 **flag: CWA{KN0W_480U7_LD_L18R4RY_P47H}**
 
 ## Lessons learned
-During these tasks I have learned how to exploit the SUID bits set to different commands and exploit them. Also I found out what env_keep does and how to exploit it. 
+During these tasks I have learned how to exploit the SUID bits set to different commands and exploit them. Also I found out what `env_keep` does and how to exploit it. 
 And on top of that I have found out about new privelege escalation techniques, gaining more knowledge about the Linux OS itself.
 
 ## Useful links
