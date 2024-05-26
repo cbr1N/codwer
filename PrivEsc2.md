@@ -192,4 +192,12 @@ void hijack() {
 **flag: CWA{KN0W_480U7_LD_L18R4RY_P47H}**
 
 ## Lessons learned
+During these tasks I have learned how to exploit the SUID bits set to different commands and exploit them. Also I found out what env_keep does and how to exploit it. 
+And on top of that I have found out about new privelege escalation techniques, gaining more knowledge about the Linux OS itself.
 
+## Useful links
+- [https://www.redhat.com/sysadmin/suid-sgid-sticky-bit]
+
+- [https://gtfobins.github.io/#+suid]
+
+- [https://vk9-sec.com/privilege-escalation-linux-path-hijacking/#:~:text=Linux%20path%20hijacking%2C%20also%20known,code%20or%20gain%20elevated%20privileges.]
