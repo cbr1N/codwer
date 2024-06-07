@@ -15,11 +15,11 @@ I accessed the car rental management system running on port 81 of a local server
 
 ![image](https://github.com/cbr1N/codwer/assets/95069685/6787ba98-b70a-421d-afc2-496c191d31b0)
 
-I examined the web page source code and noticed URLs with parameters that suggested potential manipulation points. I discovered a URL exploit that included base64 encoding (`.php?page=php://filter/convert.base64-encode/resource=flag`). This indicated a potential method to view server-side files through base64-encoded filters.
+I examined the web page source code and noticed URLs with parameters that suggested potential manipulation points. I discovered a URL exploit that included `base64` encoding (`.php?page=php://filter/convert.base64-encode/resource=flag`). This indicated a potential method to view `server-side` files through `base64-encoded` filters.
 
 ![image](https://github.com/cbr1N/codwer/assets/95069685/31865c83-53d5-4658-9c59-ed270b97eefa)
 
-I manipulated the URL to exploit a Local File Inclusion (LFI) vulnerability by using PHP filters to encode the contents of the flag.php file in base64. This allowed me to access the contents of `flag.php` without directly viewing the file on the server.
+I manipulated the URL to exploit a `Local File Inclusion (LFI)` vulnerability by using PHP filters to encode the contents of the `flag.php` file in `base64`. This allowed me to access the contents of `flag.php` without directly viewing the file on the server.
 
 ![image](https://github.com/cbr1N/codwer/assets/95069685/cd55ff41-1e26-4d54-ad19-a13c5b57872f)
 
@@ -35,7 +35,7 @@ I accessed a website where I encountered a registration form. Here, I created a 
 
 ![image](https://github.com/cbr1N/codwer/assets/95069685/1c72c819-43a1-4151-8845-cfceba2dfc4d)
 
-After registering, I navigated through different user profiles on the site using the Insecure Direct Object References (IDOR) vulnerability.
+After registering, I navigated through different user profiles on the site using the `Insecure Direct Object References (IDOR)` vulnerability.
 
 ![image](https://github.com/cbr1N/codwer/assets/95069685/493a34ef-738f-42cf-86b9-d58b01e51b1f)
 
