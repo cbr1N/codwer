@@ -1,5 +1,5 @@
-# Web Explotation Laboratory 1
-### This laboratory work is based on web explotation tecnhiques
+# Web Exploitation Laboratory 1
+### This laboratory work is based on web exploitation tecnhiques
 
 
 ## user1
