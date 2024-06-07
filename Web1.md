@@ -30,18 +30,50 @@
 
 ![image](https://github.com/cbr1N/codwer/assets/95069685/2a121f1a-585e-4275-9296-e0d4a00adc17)
 
+![image](https://github.com/cbr1N/codwer/assets/95069685/763a8f8c-6fa8-468d-b280-2f11388493a8)
+
 
 ## user3
 **Pass: CWA{1_d0n7_0r64n1z3_r4v35**
 
+![image](https://github.com/cbr1N/codwer/assets/95069685/14cd3aaf-9da2-4976-97cc-1a1d8c3cd8a1)
+
+![image](https://github.com/cbr1N/codwer/assets/95069685/7e16b0fb-b178-48d8-b4eb-9ce675bcb415)
+
+![image](https://github.com/cbr1N/codwer/assets/95069685/8412d2a0-6b14-4691-bdfe-4a69a1ac7b1c)
+
+![image](https://github.com/cbr1N/codwer/assets/95069685/7f44a5d6-9411-432a-8930-728e1369e08e)
+
+![image](https://github.com/cbr1N/codwer/assets/95069685/4259cb8f-dbf6-4135-bfd9-2e26dc2540b0)
+
+![image](https://github.com/cbr1N/codwer/assets/95069685/02345a5a-109b-4e4d-aa22-077ecc8c4a2a)
+
+![image](https://github.com/cbr1N/codwer/assets/95069685/01d12204-c9de-4c76-af3e-d37c3143fb87)
+
+![image](https://github.com/cbr1N/codwer/assets/95069685/27cdfe68-7f77-489e-847d-8ca9afbbbb90)
+
+![image](https://github.com/cbr1N/codwer/assets/95069685/6cf95677-5940-4095-ab9b-06b2e2bb046d)
+
+![image](https://github.com/cbr1N/codwer/assets/95069685/756c3e6c-5189-4721-a909-f5f3bad1536a)
+
 
 
 ## user4
-**Pass: **
+**Pass: CWA{Jw7_5ucc355fullY_D3cod3d}**
+![image](https://github.com/cbr1N/codwer/assets/95069685/2aac6272-672f-4974-b854-5b7b5c3ec6e6)
 
+![image](https://github.com/cbr1N/codwer/assets/95069685/2015f711-010f-4b2e-89cc-b35347ed4e4c)
+
+![image](https://github.com/cbr1N/codwer/assets/95069685/2b7b0f94-ef46-4a6e-8bce-1fdd3d14521c)
+
+![image](https://github.com/cbr1N/codwer/assets/95069685/3eadf9a9-cbce-46c0-9e13-3c50fe07015f)
+
+![image](https://github.com/cbr1N/codwer/assets/95069685/d485f322-da07-41a0-8cfe-985cce76548a)
 
 ## root
-**Pass: **
+**Pass: CWA{Endp01nt_P0l1c3s_Appl13d_Succ3ssfully}**
+
+![image](https://github.com/cbr1N/codwer/assets/95069685/54f1f9fa-ac36-49bc-ba50-fd22f8a2af98)
 
 
 ## Lessons learned
