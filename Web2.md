@@ -49,36 +49,25 @@
 
 
 ## user4
-**Pass: CWA{Jw7_5ucc355fullY_D3cod3d}**
-![image](https://github.com/cbr1N/codwer/assets/95069685/2aac6272-672f-4974-b854-5b7b5c3ec6e6)
+**Pass: CWA{SQL_1NJ3C71ON_3XP1oI7ED}**
 
-![image](https://github.com/cbr1N/codwer/assets/95069685/2015f711-010f-4b2e-89cc-b35347ed4e4c)
+![image](https://github.com/cbr1N/codwer/assets/95069685/223b4bdc-a24a-45ec-a712-6feb0aa2813a)
 
-I unzip the contents of the contents of the application.
+![image](https://github.com/cbr1N/codwer/assets/95069685/24241a13-6078-4917-9c6b-54d4b3c86342)
 
-![image](https://github.com/cbr1N/codwer/assets/95069685/2b7b0f94-ef46-4a6e-8bce-1fdd3d14521c)
+![image](https://github.com/cbr1N/codwer/assets/95069685/5f517686-dc1e-4675-b48f-8b78d37b09aa)
 
-I access the `Task3` directory and within it the Controllers directory. I ope the `AuthController.cs` file to read its contents.
+![image](https://github.com/cbr1N/codwer/assets/95069685/46d73748-fe8f-4f05-97ac-3782791c6af4)
 
-![image](https://github.com/cbr1N/codwer/assets/95069685/3eadf9a9-cbce-46c0-9e13-3c50fe07015f)
-
-The `AuthController.cs` file contains routes for `Login()` and `SuperSecretPage()` methods.
-Notably, the `SuperSecretPage()` method lacks proper authorization checks (`[Authorize] attribute`), making it potentially accessible without appropriate security credentials. This is a security vulnerability as it allows unauthorized access to what seems to be a sensitive part of the application.
-
-![image](https://github.com/cbr1N/codwer/assets/95069685/d485f322-da07-41a0-8cfe-985cce76548a)
-
-Accessing the `localhost:84/supersecret` URL in a browser shows a message about a "`Policy escape`" and displays the flag. The message warns that simple users can see the page, indicating a security flaw where restricted content is viewable without proper permissions.
 
 ## root
-**Pass: CWA{Endp01nt_P0l1c3s_Appl13d_Succ3ssfully}**
+**Pass: CWA{N0SQL_INJ3CT10N_15_4LM05T_TH3_S4M3}**
 
-![image](https://github.com/cbr1N/codwer/assets/95069685/54f1f9fa-ac36-49bc-ba50-fd22f8a2af98)
-
+![image](https://github.com/cbr1N/codwer/assets/95069685/1def2562-460e-4af5-8001-e0cec60cd7b1)
 
 ## Lessons learned
-Understanding Web Vulnerabilities: This laboratory work provided practical insights into various web exploitation techniques such as `Local File Inclusion (LFI)`, `Insecure Direct Object References (IDOR)`, `JSON Web Token (JWT) manipulation`, and improper authorization handling in web applications. These examples demonstrated how attackers can exploit these vulnerabilities to gain unauthorized access or information.
 
-Authentication and Authorization Flaws: Exploring vulnerabilities in authentication and authorization mechanisms, such as weak session management (`JWT manipulation`) and absent security checks (lack of proper `[Authorize]` attributes), highlighted the critical need for robust security protocols in web applications.
+
 
 ## Useful links
 
