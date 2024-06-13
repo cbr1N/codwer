@@ -14,25 +14,20 @@
 
 ![image](https://github.com/cbr1N/codwer/assets/95069685/bf4e1e43-561a-4321-a36d-26224dbae655)
 
+![image](https://github.com/cbr1N/codwer/assets/95069685/1cea1487-2ee2-4da8-b5e0-c5ebcf3aa89a)
+
+
 
 ## user2
-**Pass: CWA{D15CL053_Y0UR_F1L35**
-![image](https://github.com/cbr1N/codwer/assets/95069685/48a253b3-5790-46df-863d-db350588d541)
+**Pass: CWA{F1L3_UPLO4D_TURN5_T0_RC3}**
 
-![image](https://github.com/cbr1N/codwer/assets/95069685/268c8bb3-b10b-4b02-a9cb-270f3f8ce5b5)
+![image](https://github.com/cbr1N/codwer/assets/95069685/88332b49-106b-4931-872f-c2984fd115fd)
 
-I accessed a website where I encountered a registration form. Here, I created a user account with a simple username and password.
+![image](https://github.com/cbr1N/codwer/assets/95069685/46678105-af26-41c6-960f-3ac666cfe68e)
 
-![image](https://github.com/cbr1N/codwer/assets/95069685/1c72c819-43a1-4151-8845-cfceba2dfc4d)
+![image](https://github.com/cbr1N/codwer/assets/95069685/16a5e4e5-41f0-41bf-b86f-9efe57358374)
 
-After registering, I navigated through different user profiles on the site using the `Insecure Direct Object References (IDOR)` vulnerability.
-
-![image](https://github.com/cbr1N/codwer/assets/95069685/493a34ef-738f-42cf-86b9-d58b01e51b1f)
-
-![image](https://github.com/cbr1N/codwer/assets/95069685/2a121f1a-585e-4275-9296-e0d4a00adc17)
-
-On the profile page of the user named '`flaggiver`', I found the description containing the flag.
-
+![image](https://github.com/cbr1N/codwer/assets/95069685/e3f1a00b-7d4b-4b56-a5a0-1edc83b27097)
 
 
 ## user3
