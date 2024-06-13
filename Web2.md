@@ -14,7 +14,6 @@
 
 ![image](https://github.com/cbr1N/codwer/assets/95069685/bf4e1e43-561a-4321-a36d-26224dbae655)
 
-![image](https://github.com/cbr1N/codwer/assets/95069685/1cea1487-2ee2-4da8-b5e0-c5ebcf3aa89a)
 
 
 
@@ -29,46 +28,19 @@
 
 ![image](https://github.com/cbr1N/codwer/assets/95069685/e3f1a00b-7d4b-4b56-a5a0-1edc83b27097)
 
+![image](https://github.com/cbr1N/codwer/assets/95069685/d92e2b29-48ff-4220-8271-22d0676b64c1)
+
+![image](https://github.com/cbr1N/codwer/assets/95069685/60325d41-94df-44a5-b347-6c8b72660aae)
+
+![image](https://github.com/cbr1N/codwer/assets/95069685/9926849b-7b55-455f-9674-ae04b9786b54)
+
+![image](https://github.com/cbr1N/codwer/assets/95069685/6e282a16-c536-40ae-bd10-48d3acae755c)
 
 ## user3
 **Pass: CWA{1_d0n7_0r64n1z3_r4v35**
 
-![image](https://github.com/cbr1N/codwer/assets/95069685/14cd3aaf-9da2-4976-97cc-1a1d8c3cd8a1)
+![image](https://github.com/cbr1N/codwer/assets/95069685/c76f2d53-1b5f-47de-8935-7a38a81e0427)
 
-![image](https://github.com/cbr1N/codwer/assets/95069685/7e16b0fb-b178-48d8-b4eb-9ce675bcb415)
-
-The application displays a basic login form where I can enter a username and password.
-
-![image](https://github.com/cbr1N/codwer/assets/95069685/8412d2a0-6b14-4691-bdfe-4a69a1ac7b1c)
-
-After viewing the source code I can see the useraname and password of a `user`.
-
-![image](https://github.com/cbr1N/codwer/assets/95069685/4259cb8f-dbf6-4135-bfd9-2e26dc2540b0)
-
-I use this information to log in.
-
-![image](https://github.com/cbr1N/codwer/assets/95069685/7f44a5d6-9411-432a-8930-728e1369e08e)
-
-Right now I am a user. If the challenge has to do with JWT then the next step is to inspect this user's jwtToken.
-
-![image](https://github.com/cbr1N/codwer/assets/95069685/02345a5a-109b-4e4d-aa22-077ecc8c4a2a)
-
-I don't need this key because I will use the `jwt.io` website.
-
-![image](https://github.com/cbr1N/codwer/assets/95069685/01d12204-c9de-4c76-af3e-d37c3143fb87)
-
-I notice that the role is set to "`user`". This role is likely what controls access to different parts of the application.
-
-![image](https://github.com/cbr1N/codwer/assets/95069685/27cdfe68-7f77-489e-847d-8ca9afbbbb90)
-
-In the JWT, I change the role field from "`user`" to "`admin`" in hopes of elevating my privileges within the application. 
-
-![image](https://github.com/cbr1N/codwer/assets/95069685/6cf95677-5940-4095-ab9b-06b2e2bb046d)
-
-After modifying the JWT and updating it in my browser cookies, I refresh or navigate through the application to trigger a re-evaluation of my session.
-The application now recognizes me as an "`admin`" based on the altered JWT, granting access to the admin page.
-
-![image](https://github.com/cbr1N/codwer/assets/95069685/756c3e6c-5189-4721-a909-f5f3bad1536a)
 
 
 
