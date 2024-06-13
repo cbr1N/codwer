@@ -41,7 +41,9 @@
 
 ![image](https://github.com/cbr1N/codwer/assets/95069685/c76f2d53-1b5f-47de-8935-7a38a81e0427)
 
+![image](https://github.com/cbr1N/codwer/assets/95069685/0ca68040-f890-412a-83b9-0e12793c5248)
 
+![image](https://github.com/cbr1N/codwer/assets/95069685/4c6a0e63-14d7-4f67-95fc-b1eb23075d6e)
 
 
 ## user4
