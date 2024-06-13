@@ -37,7 +37,7 @@
 ![image](https://github.com/cbr1N/codwer/assets/95069685/6e282a16-c536-40ae-bd10-48d3acae755c)
 
 ## user3
-**Pass: CWA{1_d0n7_0r64n1z3_r4v35**
+**Pass: CWA{F1L3_UPLO4D_TURN5_T0_RC3}**
 
 ![image](https://github.com/cbr1N/codwer/assets/95069685/c76f2d53-1b5f-47de-8935-7a38a81e0427)
 
